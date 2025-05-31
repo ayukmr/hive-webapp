@@ -1,0 +1,45 @@
+main {
+  width: 900px;
+}
+
+#turn {
+  width: 720px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+#view {
+  display: flex;
+  align-items: center;
+}
+
+#players {
+  margin-left: 25px;
+}
+
+#players img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0 0;
+  image-rendering: pixelated;
+}
+
+#players code {
+  font-size: 15.5px;
+}
+
+#players hr {
+  width: 65px;
+  margin: 20px 0;
+}
+
+#num {
+  width: 720px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+#num select {
+  margin: 0 0 0 8px;
+  font-size: 20px;
+}
