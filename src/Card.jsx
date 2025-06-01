@@ -11,10 +11,11 @@ class Card extends Component {
           <span>{id}</span>
         </h2>
 
-        <div>Pollen: <code>{pollen}</code></div>
-
-        {this.props.hive &&
-          <div>Hive: <code>{this.props.hive.pollen}</code></div>}
+      {this.props.hive &&
+        <>
+          <div>Pollen: <code>{pollen}</code></div>
+          <div>Hive: <code>{this.props.hive.pollen}</code></div>
+        </>}
       </div>
     );
   }
