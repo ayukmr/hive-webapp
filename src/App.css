@@ -14,14 +14,26 @@ main {
 }
 
 #players {
+  width: 300px;
   margin-left: 25px;
 }
 
-#players img {
+#players h2 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+
+#players h2 img {
   width: 30px;
   height: 30px;
   margin: 0 5px 0 0;
   image-rendering: pixelated;
+}
+
+#players h2 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #players code {

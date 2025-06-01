@@ -1,8 +1,8 @@
 .board {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
-  width: 720px;
-  height: 720px;
+  min-width: 720px;
+  min-height: 720px;
 }
 
 .board .cell {

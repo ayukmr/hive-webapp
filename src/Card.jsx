@@ -6,9 +6,9 @@ class Card extends Component {
 
     return (
       <div>
-        <h2 style={{ marginTop: 0, display: 'flex', alignItems: 'center' }}>
+        <h2>
           <img src={`assets/bees/${num}.png`} />
-          {id}
+          <span>{id}</span>
         </h2>
 
         <div>Pollen: <code>{pollen}</code></div>
