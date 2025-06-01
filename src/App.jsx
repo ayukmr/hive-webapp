@@ -5,6 +5,8 @@ import Card from './Card';
 
 import './App.css';
 
+const AUTH = '9fe2d786-82e4-4901-a969-9fe7af2d8988';
+
 class App extends Component {
   state = {
     selected: 0,
@@ -12,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.socket = new WebSocket('ws://localhost:3000/watch');
+    this.socket = new WebSocket(`wss://hive-api.ayukmr.com/watch?auth=${AUTH}`);
 
     this.socket.onmessage = (e) => {
       const { game, players, walls, flowers, hives } = JSON.parse(e.data);
