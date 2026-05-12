@@ -68,11 +68,10 @@ class App extends Component {
                 />
               </>)}
 
-              {game?.turn === 20 && <>
-                <hr />
-
-                <button onClick={() => this.sendReset()}>Reset</button>
-              </>}
+            {players.length > 0 && <>
+              <hr />
+              <button onClick={() => this.sendReset()}>Reset</button>
+            </>}
           </div>
         </div>
 
